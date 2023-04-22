@@ -53,7 +53,7 @@ function getBooks() {
 }
 
 function getGenres() {
-    axios.get('http://localhost:4004/countries')
+    axios.get('http://localhost:4004/books')
         .then(res => {
             res.data.forEach(genre => {
                 const option = document.createElement('option')
