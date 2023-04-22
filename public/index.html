@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Ratings</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>Book Ratings</h1>
+    </header>
+
+    <main>
+        <aside>
+            <h2>Add a Rating</h2>
+
+            <form>
+                <label for="title-input">Title:</label>
+                <input type='text' id="title-input"/>
+
+                <label for="genre-select">Genre:</label>
+                <select id="genre-select"></select>
+
+                <h4>Rating</h4>
+                <div class="radio">
+                    <label for="rating-one">1:</label>
+                    <input type="radio" name="rating" value="1" id="rating-one" checked="true"/>
+                </div>
+
+                <div class="radio">
+                    <label for="rating-two">2:</label>
+                    <input type="radio" name="rating" value="2" id="rating-two"/>
+                </div>
+
+                <div class="radio">
+                    <label for="rating-three">3:</label>
+                    <input type="radio" name="rating" value="3" id="rating-three"/>
+                </div>
+
+                <div class="radio">
+                    <label for="rating-four">4:</label>
+                    <input type="radio" name="rating" value="4" id="rating-four"/>
+                </div>
+
+                <div class="radio">
+                    <label for="rating-five">5:</label>
+                    <input type="radio" name="rating" value="5" id="rating-five"/>
+                </div>
+                
+                <button>Add</button>
+            </form>
+        </aside>
+
+        <section id="book-list"></section>
+    </main>
+
+    <script src="../node_modules/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
